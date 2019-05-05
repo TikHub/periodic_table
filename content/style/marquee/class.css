@@ -1,0 +1,143 @@
+.aaa:hover::after {
+	display: none;
+}
+.actinoid, .alkali, .alkaline, .halogen, .lanthanoid, .metalloid, .noble_gas, .nonmetal, .poor, .transition, .unknown {
+	-webkit-box-shadow: inset 0 0 5px 2px lightgrey;
+	-moz-box-shadow: inset 0 0 5px 2px lightgrey;
+	-moz-box-shadow: inset 0 0 5px 2px lightgrey;
+	-o-box-shadow: inset 0 0 5px 2px lightgrey;
+	box-shadow: inset 0 0 5px 2px lightgrey;
+}
+.actinoid:hover, .alkali:hover, .alkaline:hover, .halogen:hover, .lanthanoid:hover, .metalloid:hover, .noble_gas:hover, .nonmetal:hover, .poor:hover, .transition:hover, .unknown:hover {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.emptycell {
+	width: 100%;
+
+	border: none;
+	display: table-cell;
+}
+.indexcell {
+	color: #CCC;
+	
+	text-align: center;
+	vertical-align: bottom;
+}
+.table {
+	width: 900px;
+	
+	position: relative;
+
+	display: table;
+}
+.table_one, .table_two, .table_three {
+	display: table;
+}
+.tbody {
+	display: table-row;
+}
+.td {
+	height: 50px;
+	width: 50px;
+
+	font-size: 8pt;
+	text-align: center;
+	white-space: nowrap;
+	
+	display: table-cell;
+	border-radius: 20%;
+	margin: auto;
+	padding: 3px;
+	opacity: .9;
+}
+.tr {
+	display: table-row;
+}
+.aaa {
+	position: relative;
+}
+
+
+footer {
+	margin: 0;
+}
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+	width: 745px; height: 320px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-ms-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-o-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	height: inherit;
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 67px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+	display: block;
+}
+
+/*Image title styles*/
+
+li {
+	width: inherit;
+	height: inherit;
+	background-color: red;
+}
+li > div {
+	vertical-align: middle;
+}
+div + p {
+	text-align: center;
+}

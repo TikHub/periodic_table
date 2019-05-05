@@ -1,0 +1,9 @@
+.main {
+	height: 50px;
+	width: 100%;
+
+	/*background-color: #81D5F8;*/
+	
+    display: -webkit-flex;
+    display: flex;
+}

@@ -1,0 +1,241 @@
+caption {
+	height: 100px;
+	width: 978px;
+
+	font-size: 1.8em;
+	text-shadow: 0 0 5px #FFF;
+	line-height: 100px;
+
+	margin: auto;
+
+	-webkit-transition: all 1.5s;
+	-moz-transition: all 1.5s;
+	-ms-transition: all 1.5s;
+	-o-transition: all 1.5s;
+	transition: all 1.5;
+}
+caption:hover {
+	text-shadow: 0 0 25px #FFF;
+}
+rt::after {
+	font-size: 10pt;
+	font-weight: bold;
+	content: attr(content-text);
+	width: 100px;
+	position: absolute;
+	top: 118px;
+	left: 375px;
+	text-align: center;
+	color: #FFF;
+	display: none;
+	z-index: 5;
+}
+ruby {
+	color: #000;
+}
+ruby::after {
+	font-size: 17pt;
+	font-weight: bold;
+	content: attr(content-text);
+	width: 100px;
+	position: absolute;
+	top: 140px;
+	left: 405px;
+	text-align: center;
+	color: #FFF;
+	display: none;
+	z-index: 5;
+}
+table {
+	margin: auto;
+}
+tbody td, tfoot table td {
+	height: 50px;
+	width: 50px;
+	
+	text-align: center;
+
+	background-color: #FFF;
+	/* border: 1px solid #000; */
+	border-radius: 10%;
+
+	-webkit-transition: all .9s;
+	-moz-transition: all .9s;
+	-ms-transition: all .9s;
+	-o-transition: all .9s;
+	transition: all .9s;
+
+}
+td.verticalindexcell {
+	max-width: 50px;
+	min-width: 50px;
+	
+	color: lightgrey;
+	text-align: right;
+	
+	position: relative;
+	background-color: transparent;
+	
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	-webkit-animation: vindex 4s ease 1;
+	-moz-animation: vindex 4s ease 1;
+	-ms-animation: vindex 4s ease 1;
+	-o-animation: vindex 4s ease 1;
+	animation: vindex 4s ease 1;
+}
+td[colspan$="10"], td[colspan$="16"] {
+	background-color: transparent;
+
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: 0 0 0 0 transparent;
+	-moz-box-shadow: 0 0 0 0 transparent;
+	-ms-box-shadow: 0 0 0 0 transparent;
+	-o-box-shadow: 0 0 0 0 transparent;
+	box-shadow: 0 0 0 0 transparent;
+}
+td[colspan$="19"] {
+	padding-top: 10px;
+	margin: auto;
+}
+tfoot table {
+	top: 50px;
+
+	margin: auto;
+}
+th {
+	height: 50px;
+	width: 50;
+
+	color: lightgrey;
+}
+.actinoid, .alkali, .alkaline, .halogen, .lanthanoid, .metalloid, .noble_gas, .nonmetal, .poor, .transition, .unknown {
+	-webkit-box-shadow: inset 0 0 5px 2px lightgrey;
+	-moz-box-shadow: inset 0 0 5px 2px lightgrey;
+	-ms-box-shadow: inset 0 0 5px 2px lightgrey;
+	-o-box-shadow: inset 0 0 5px 2px lightgrey;
+	box-shadow: inset 0 0 5px 2px lightgrey;
+}
+.actinoid:hover, .alkali:hover, .alkaline:hover, .halogen:hover, .lanthanoid:hover, .metalloid:hover, .noble_gas:hover, .nonmetal:hover, .poor:hover, .transition:hover, .unknown:hover {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.actinoid:hover tt, .alkali:hover tt, .alkaline:hover tt, .halogen:hover tt, .lanthanoid:hover tt, .metalloid:hover tt, .noble_gas:hover tt, .nonmetal:hover tt, .poor:hover tt, .transition:hover tt, .unknown:hover tt,
+.actinoid:hover strong, .alkali:hover strong, .alkaline:hover strong, .halogen:hover strong, .lanthanoid:hover strong, .metalloid:hover strong, .noble_gas:hover strong, .nonmetal:hover strong, .poor:hover strong, .transition:hover strong, .unknown:hover strong,
+.actinoid:hover ruby, .alkali:hover ruby, .alkaline:hover ruby, .halogen:hover ruby, .lanthanoid:hover ruby, .metalloid:hover ruby, .noble_gas:hover ruby, .nonmetal:hover ruby, .poor:hover ruby, .transition:hover ruby, .unknown:hover ruby {
+	color: #FFF;
+}
+.actinoid:hover  {
+	background-color: #E51E25;
+}
+.actinoid ruby, .actinoid strong, .actinoid tt {
+	color: #E51E25;
+}
+.alkali:hover {
+	background-color: #F09609;
+}
+.alkali  ruby, .alkali  strong, .alkali  tt {
+	color: #F09609;
+}
+.alkaline:hover {
+	background-color: #996600;
+}
+.alkaline ruby, .alkaline strong, .alkaline tt {
+	color: #996600;
+}
+.halogen:hover {
+	background-color: #8AC03F;
+}
+.halogen ruby, .halogen strong, .halogen tt {
+	color: #8AC03F;
+}
+.lanthanoid:hover  {
+	background-color: #ED1790;
+}
+.lanthanoid ruby, .lanthanoid strong, .lanthanoid tt {
+	color: #ED1790;
+}
+.metalloid:hover {
+	background-color: #16ABA8;
+}
+.metalloid ruby, .metalloid strong, .metalloid tt {
+	color: #16ABA8;
+}
+.noble_gas:hover {
+	background-color: #7E51A1;
+}
+.noble_gas ruby, .noble_gas strong, .noble_gas tt {
+	color: #7E51A1;
+}
+.nonmetal:hover {
+	background-color: #00FB20;
+}
+.nonmetal ruby, .nonmetal strong, .nonmetal tt {
+	color: #00FB20;
+}
+.poor:hover {
+	background-color: #7003FB;
+}
+.poor ruby, .poor strong, .poor tt {
+	color: #7003FB;
+}
+.transition:hover {
+	background-color: #DF72AC;
+}
+.transition ruby, .transition strong, .transition tt {
+	color: #DF72AC;
+}
+.td:hover rt::after, .td:hover ruby::after {
+	display: block;
+}
+.unknown:hover {
+	background-color: #767676;
+}
+.unknown ruby, .unknown strong, .unknown tt {
+	color: #767676;	
+}
+@-webkit-keyframes vindex {
+	0% {right: 500px;}
+	100% {right: 0;}
+}
+@-moz-keyframes vindex {
+	0% {right: 500px;}
+	100% {right: 0;}
+}
+@-ms-keyframes vindex {
+	0% {right: 500px;}
+	100% {right: 0;}
+}
+@-o-keyframes vindex {
+	0% {right: 500px;}
+	100% {right: 0;}
+}
+@keyframes vindex {
+	0% {right: 500px;}
+	100% {right: 0;}
+}
+@media only screen and (min-width: 3700px) {
+	p {
+		font-size: 5px;
+	}
+	rt::after {
+		font-size: 5px;
+	}
+	ruby {
+		font-size: 6px;
+	}
+	strong, tt {
+		font-size: 4pt;
+	}
+	strong::after, tt::after {
+		font-size: 5px;
+	}
+}

@@ -1,0 +1,36 @@
+svg {
+	height: 480px; 
+	width: 640px;
+}
+#actinoid, #alkali, #alkaline, #halogen, #lanthanoid, #metalloid_sub1, #metalloid_sub2, #metalloid_sub3, #metalloid_sub4,
+#noble_gas, #nonmetal_sub1, #nonmetal_sub2, #nonmetal_sub3, #nonmetal_sub4,
+#poor_sub1, #poor_sub2, #poor_sub3, #transition_sub1, #transition_sub2, #unknown {
+	opacity: .3;
+
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+#actinoid:hover, #alkali:hover, #alkaline:hover, #halogen:hover, #lanthanoid:hover, #metalloid:hover #metalloid_sub1, 
+#metalloid:hover #metalloid_sub2, #metalloid:hover #metalloid_sub3, #metalloid:hover #metalloid_sub4, #noble_gas:hover,
+#nonmetal:hover #nonmetal_sub1, #nonmetal:hover #nonmetal_sub2, #nonmetal:hover #nonmetal_sub3, #nonmetal:hover #nonmetal_sub4, 
+#transition:hover #transition_sub1, #transition:hover #transition_sub2,
+#poor:hover #poor_sub1, #poor:hover #poor_sub2, #poor:hover #poor_sub3, #unknown:hover {
+	opacity: 1;
+}
+#acti, #alk, #alka, #hal, #lanth, #metal, #nob, #non, #po, #tra, #unk {
+	opacity: 0;
+	
+	transform: scale(0);
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+#actinoid:hover + #acti, #alkali:hover + #alk, #alkaline:hover + #alka, #halogen:hover + #hal, #lanthanoid:hover + #lanth, #metalloid:hover + #metal, 
+#noble_gas:hover + #nob, #nonmetal:hover > #non, #poor:hover + #po, #transition:hover + #tra, #unknown:hover + #unk {
+	opacity: 1;
+
+	transform: scale(1);
+}

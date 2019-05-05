@@ -1,0 +1,59 @@
+.actinoid {
+	color: #E51E25;
+}
+.actinoid:hover  {
+	color: #FFF;
+
+	background-color: #E51E25;
+}
+.lanthanoid {
+	color: #ED1790;
+}
+.lanthanoid:hover  {
+	color: #FFF;
+	
+	background-color: #ED1790;
+}
+.td {
+	background-color: rgba(211, 211, 211, .2);
+}
+/* .noble_gas {
+	background-color: #7E51A1;
+}
+.alkali {
+	background-color: #F09609;
+}
+.alkaline {
+	background-color: #996600;
+}
+.nonmetal {
+	background-color: #339933;
+}
+.unknown {
+	background-color: #767676;
+}
+.halogen {
+	background-color: #8AC03F;
+}
+.transition {
+	background-color: #DF72AC;
+}
+.poor {
+	background-color: #219FD9;
+}
+.metalloid {
+	background-color: #16ABA8;
+}
+.antinoid {
+	background-color: #e51e25;
+}
+.lanthanoid {
+	background-color: #ed1790;
+}
+ */
+
+/* @media screen and (min-width: 3700px) {
+	td[colspan$="15"] {
+		width: 1560px;
+	}	
+} */

@@ -1,0 +1,72 @@
+.main menuitem {
+	font-size: 8pt;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	/* opacity: 0.6; */
+	overflow: hidden;
+	/* background-color: #81D5F8; */
+	/* border: 1px solid #FFF; */
+	
+    flex: 1;
+    flex-grow: 1;
+    -moz-flex: 1;
+	-moz-flex-grow: 1;
+	-moz-transition: all 1s ease;
+	-o-flex: 1;
+	-o-flex-grow: 1;
+	-o-transition: all 1s ease;
+	-webkit-flex: 1;
+	-webkit-flex-grow: 1;
+	-webkit-transition: all 1s ease;
+}
+.main menuitem:hover {
+	font-size: 18pt;
+
+	opacity: 1;
+
+	flex-grow: 9;
+	-moz-flex-grow: 9;
+	-o-flex-grow: 9;
+	-webkit-flex-grow: 9;
+}
+.main menuitem:nth-child(1) {
+	border-top: 3px solid #8E388E;
+	
+}
+.main menuitem:nth-child(2) {
+	border-top: 3px solid #16ABA8;
+}
+.main menuitem:nth-child(3) {
+	border-top: 3px solid #E00;
+}
+.main menuitem:nth-child(4) {
+	border-top: 3px solid #00CD00;
+}
+.main menuitem:nth-child(1):hover {
+	background-color: #8E388E;
+}
+.main menuitem:nth-child(2):hover {
+	background-color: #16ABA8;
+}
+.main menuitem:nth-child(3):hover {
+	background-color: #E00;
+}
+.main menuitem:nth-child(4):hover {
+	background-color: #00CD00;
+}
+menuitem > a {
+	color: #FFF;
+	font-size: 18pt;
+	opacity: 0;
+
+	-webkit-transition: all 1.3s ease;
+}
+menuitem:hover > a {
+	color: #FFF;
+	font-size: 18pt;
+	opacity: 1;
+}

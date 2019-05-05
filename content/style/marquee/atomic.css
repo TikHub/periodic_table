@@ -1,0 +1,449 @@
+* {
+	padding: 0;
+	margin: auto;
+}
+html body {
+	height: 100%;
+	width: 100%;
+
+	margin-top: 100px;
+}
+footer {
+	width: 100%;
+
+	text-align: center;
+
+	padding-top: 150px;
+	position: relative;
+}
+main{
+	position: relative;
+	overflow: hidden;
+}
+a {
+	height: 60px;
+	width: 60px;
+	
+	color: #FFF;
+	text-decoration: none;
+
+	border-radius: 10px;
+	display: block;
+}
+big{
+	font-size: 20px;
+
+	display: block;
+}
+bdi {
+	width: 60px;
+
+	font-size: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	display: block;
+}
+li {
+	list-style-type: none;
+}
+marquee {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+p {
+	width: 60px;
+
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+	overflow: hidden;
+	quotes: '[' ']';
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+small {
+	text-align: left;
+
+	display: block;
+	padding-left: 5px;
+	padding-top: 2px;
+}
+span {
+	width: 60px;
+	
+	font-size: 13px;
+	
+	display: block;
+}
+/* .row1 div:first-child::before, .row2 div:first-child::before {
+	font-size: 13px;
+	content: '1';
+} */
+.td > a::after{
+	content: '';
+	position: absolute;
+	top: 50px;
+	left: 405px;
+	width: 100px;
+	height: 100px;
+	border-radius: 10%;
+	display: none;
+
+}
+.td > a:hover::after, .td > a:hover bdi::after, .td > a:hover big::after, .td > a:hover small::after, .td > a:hover p::after {
+	display: block;
+}
+.td > a:hover::after {
+	-webkit-animation: big .7s ease;
+	-moz-animation: big .7s ease;
+	-ms-animation: big .7s ease;
+	-o-animation: big .7s ease;
+	animation: big .7s ease;
+}
+.td > a:hover bdi::after {
+	-webkit-animation: left 1.4s ease;
+	-moz-animation: left 1.4s ease;
+	-ms-animation: left 1.4s ease;
+	-o-animation: left 1.4s ease;
+	animation: left 1.4s ease;
+}
+.td > a:hover big::after {
+	-webkit-animation: right 1.5s ease;
+	-moz-animation: right 1.5s ease;
+	-ms-animation: right 1.5s ease;
+	-o-animation: right 1.5s ease;
+	animation: right 1.5s ease;
+}
+.td > a:hover small::after {
+	-webkit-animation: top 1.4s ease;
+	-moz-animation: top 1.4s ease;
+	-ms-animation: top 1.4s ease;
+	-o-animation: top 1.4s ease;
+	animation: top 1.4s ease;
+}
+.td > a:hover p::after {
+	-webkit-animation: bottom 1.4s ease;
+	-moz-animation: bottom 1.4s ease;
+	-ms-animation: bottom 1.4s ease;
+	-o-animation: bottom 1.4s ease;
+	animation: bottom 1.4s ease;
+}
+bdi::after {
+	font-size: 10pt;
+	content: attr(content-text);
+	width: 100px;
+	position: absolute;
+	top: 110px;
+	left: 405px;
+	text-align: center;
+	color: #FFF;
+	display: none;
+	z-index: 5;
+}
+big::after {
+	width: 100px;
+	font-size: 20pt;
+	content: attr(content-text);
+	position: absolute;
+	top: 75px;
+	left: 405px;
+	text-align: center;
+	color: #FFF;
+	display: none;
+	z-index: 5;
+}
+p::after {
+	content: attr(content-text);
+	width: 100px;
+	position: absolute;
+	top: 130px;
+	left: 405px;
+	text-align: center;
+	color: #FFF;
+	display: none;
+	z-index: 5;
+}
+small::after {
+	font-size: 15pt;
+	content: attr(content-text);
+	width: 100px;
+	position: absolute;
+	top: 50px;
+	left: 405px;
+	text-align: left;
+	color: #FFF;
+	display: none;
+	z-index: 5;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+.emptycell:hover::after {
+	display: none;
+}
+.actinoid > a {
+	color: #E51E25;
+	
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.actinoid > a:hover {
+	background-color: #E51E25;
+}
+.alkali > a {
+	color: #F09609;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.alkali > a::after, .alkali > a:hover {
+	background-color: #F09609;
+}
+.alkaline > a {
+	color: #996600;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.alkaline > a::after, .alkaline > a:hover {
+	background-color: #996600;
+}
+.halogen > a {
+	color: #8AC03F;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.halogen > a::after, .halogen > a:hover {
+	background-color: #8AC03F;
+}
+.lanthanoid > a {
+	color: #ED1790;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.lanthanoid > a:hover {
+	background-color: #ED1790;
+}
+.metalloid > a {
+	color: #16ABA8;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.metalloid > a::after, .metalloid > a:hover {
+	background-color: #16ABA8;
+}
+.noble_gas > a {
+	color: #7E51A1;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.noble_gas > a::after, .noble_gas > a:hover {
+	background-color: #7E51A1;
+}
+.nonmetal > a {
+	color: #00FB20;
+	
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.nonmetal > a::after, .nonmetal > a:hover {
+	background-color: #00FB20;
+}
+.poor > a {
+	color: #7003FB;
+	
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.poor >a::after, .poor >a:hover {
+	background-color: #7003FB;
+}
+.td > a {
+	background-color: #FFF;
+
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-ms-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+}
+.td > a > p {
+	color: inherit;
+}
+.td > a:hover {
+	color: #FFF;
+}
+.transition > a {
+	color: #DF72AC;
+	
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.transition > a::after, .transition > a:hover {
+	background-color: #DF72AC;
+}
+.unknown > a {
+	color: #767676;
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease; 
+	trasition: all 2s ease;
+}
+.unknown >a::after, .unknown >a:hover {
+	background-color: #767676;
+}
+@-webkit-keyframes big {
+	0% {height: 100px; width: 0;}
+	100% {height: 100px; width: 100px;}
+}
+@-moz-keyframes big {
+	0% {height: 100px; width: 0;}
+	100% {height: 100px; width: 100px;}
+}
+@-ms-keyframes big {
+	0% {height: 100px; width: 0;}
+	100% {height: 100px; width: 100px;}
+}
+@-o-keyframes big {
+	0% {height: 100px; width: 0;}
+	100% {height: 100px; width: 100px;}
+}
+@keyframes big {
+	0% {height: 100px; width: 0;}
+	100% {height: 100px; width: 100px;}
+}
+@-webkit-keyframes bottom {
+	0% {top: 1500px; left: 1500px;}
+	100% {top: 130px; left: 405px;}
+}
+@-moz-keyframes bottom {
+	0% {top: 1500px; left: 1500px;}
+	100% {top: 130px; left: 405px;}
+}
+@-ms-keyframes bottom {
+	0% {top: 1500px; left: 1500px;}
+	100% {top: 130px; left: 405px;}
+}
+@-o-keyframes bottom {
+	0% {top: 1500px; left: 1500px;}
+	100% {top: 130px; left: 405px;}
+}
+@keyframes bottom {
+	0% {top: 1500px; left: 1500px;}
+	100% {top: 130px; left: 405px;}
+}
+@-webkit-keyframes left {
+	0% {top: 1500px; left:-1500px;}
+	100% {top: 110px; left: 405px;}
+}
+@-moz-keyframes left {
+	0% {top: 1500px; left:-1500px;}
+	100% {top: 110px; left: 405px;}
+}
+@-ms-keyframes left {
+	0% {top: 1500px; left:-1500px;}
+	100% {top: 110px; left: 405px;}
+}
+@-o-keyframes left {
+	0% {top: 1500px; left:-1500px;}
+	100% {top: 110px; left: 405px;}
+}
+@keyframes left {
+	0% {top: 1500px; left:-1500px;}
+	100% {top: 110px; left: 405px;}
+}
+@-webkit-keyframes right {
+	0% {top: -1500px; left: 1500px;}
+	100% {top: 75px; left: 405px;}
+}
+@-moz-keyframes right {
+	0% {top: -1500px; left: 1500px;}
+	100% {top: 75px; left: 405px;}
+}
+@-ms-keyframes right {
+	0% {top: -1500px; left: 1500px;}
+	100% {top: 75px; left: 405px;}
+}
+@-o-keyframes right {
+	0% {top: -1500px; left: 1500px;}
+	100% {top: 75px; left: 405px;}
+}
+@keyframes right {
+	0% {top: -1500px; left: 1500px;}
+	100% {top: 75px; left: 405px;}
+}
+@-webkit-keyframes top {
+	0% {top: -1500px; left: -1500px;}
+	100% {top: 50px; left: 405px;}
+}
+@-moz-keyframes top {
+	0% {top: -1500px; left: -1500px;}
+	100% {top: 50px; left: 405px;}
+}
+@-ms-keyframes top {
+	0% {top: -1500px; left: -1500px;}
+	100% {top: 50px; left: 405px;}
+}
+@-o-keyframes top {
+	0% {top: -1500px; left: -1500px;}
+	100% {top: 50px; left: 405px;}
+}
+@keyframes top {
+	0% {top: -1500px; left: -1500px;}
+	100% {top: 50px; left: 405px;}
+}
+@media only screen and (min-width: 3700px) {
+	bdi {
+		font-size: 5px;
+	}
+	bdi::after {
+		font-size: 4pt;
+	}
+	big {
+		font-size: 5pt;
+	}
+	p {
+		font-size: 4pt;
+	}
+	small {
+		font-size: 4pt;
+	}
+}
